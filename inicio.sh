@@ -9,5 +9,4 @@ else
     echo No se ha añadido el nombre del host correctamente
     exit
 fi
-
-echo continuacion
+sudo ./addVirtualHost.sh $1
