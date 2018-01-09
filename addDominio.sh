@@ -24,5 +24,5 @@ then
 fi
     
 
-echo "127.0.0.1	$1" >> /etc/hosts
+echo "127.0.0.1	$1.local" >> /etc/hosts
 exit 0
