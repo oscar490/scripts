@@ -17,3 +17,6 @@ mostrar "se ha añadido el nombre de host correctamente"
 
 sudo ./addVirtualHost.sh $1
 mostrar "se ha añadido el sitio vitual correctamente"
+
+./addProyecto.sh $1
+mostrar "se ha añadido la estructura de carpetas"  ~/web/$1
