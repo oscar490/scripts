@@ -9,7 +9,7 @@ fi
 
 var=$(cat /etc/hosts | grep $1 | wc -l)
 
-nombre=$(echo $1 | grep "^[a-z0-9]*$"  | wc -l)
+nombre=$(echo $1 | grep "^[a-z0-9A-Z]*$"  | wc -l)
 
 if [ $nombre -eq 0 ]
 then

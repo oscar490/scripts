@@ -1,12 +1,19 @@
 
+mostrar() {
+
+    if [ $? -eq 0 ]
+    then
+        echo $1
+        echo
+
+    else
+        echo "No" $1
+        exit
+    fi
+}
+
 sudo ./addDominio.sh $1
+mostrar "se ha añadido el nombre de host correctamente"
 
-if [ $? -eq 0 ]
-then
-    echo Se ha añadido el nombre de host correctamente.
-
-else
-    echo No se ha añadido el nombre del host correctamente
-    exit
-fi
 sudo ./addVirtualHost.sh $1
+mostrar "se ha añadido el sitio vitual correctamente"
