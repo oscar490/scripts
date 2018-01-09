@@ -12,11 +12,11 @@ mostrar() {
     fi
 }
 
-sudo ./addDominio.sh $1
+sudo ./scripts/addDominio.sh $1
 mostrar "se ha añadido el nombre de host correctamente"
 
-sudo ./addVirtualHost.sh $1 "/var/www/web/$1"
+sudo ./scripts/addVirtualHost.sh $1 "/var/www/web/$1"
 mostrar "se ha añadido el sitio vitual correctamente"
 
-./addProyecto.sh $1
+./scripts/addProyecto.sh $1
 mostrar "se ha añadido la estructura de carpetas"  ~/web/$1
