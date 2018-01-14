@@ -20,3 +20,9 @@ mostrar "se ha añadido el sitio vitual correctamente"
 
 ./scripts/addProyecto.sh $1
 mostrar "se ha añadido la estructura de carpetas"  ~/web/$1
+
+./scripts/addSeguimiento.sh $1
+mostrar "se está seguiendo el proyecto por GITHUB."
+
+./scripts/addBaseDatos.sh $1
+mostrar "se ha creado la Base de datos y el usuario."
