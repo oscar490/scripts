@@ -20,3 +20,13 @@ then
 else
     echo Ya existe la base de datos $1.
 fi
+
+cd ~/web/$1/db
+
+touch $1.sql
+echo "psql -U $1 -h localhost $1 < $1.sql" > load.sh
+sudo chmod a+x load.sh
+
+echo psql -U $1 -h localhost $1 > inicio.sh
+sudo chmod a+x inicio.sh
+
